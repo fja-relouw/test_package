@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="abp-autoencoder",
+    name="clinical-waveform",
     version="0.1.0",
-    description="Pretrained LSTM autoencoder for encoding ABP beat segments",
+    description="Pretrained LSTM autoencoders for encoding clinical waveform beat segments (ABP, PPG)",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
     package_data={
-        "abp_autoencoder": ["weights/*.pth"],
+        "clinical_waveform": ["weights/*.pth"],
     },
     include_package_data=True,
     python_requires=">=3.8",
